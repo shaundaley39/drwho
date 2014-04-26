@@ -1,6 +1,11 @@
 require 'tropo-webapi-ruby'
 require 'sinatra'
 
+post '/test' do
+    data = JSON.parse(request.body.read)
+    json data
+end
+
 post '/index.json' do
   
   t = Tropo::Generator.new

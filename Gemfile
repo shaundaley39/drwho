@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+gem 'sinatra'
+gem 'sinatra-contrib'
+gem 'unicorn'
+gem 'tropo-webapi-ruby'
