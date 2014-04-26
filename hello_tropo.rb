@@ -1,10 +1,15 @@
 require 'tropo-webapi-ruby'
+require 'rubygems'
 require 'sinatra'
 
-post '/test' do
-    data = JSON.parse(request.body.read)
-    json data
+get '/' do
+  "hello world! it's #{Time.now} here!"
 end
+
+#post '/test' do
+#    data = JSON.parse(request.body.read)
+#    json data
+#end
 
 post '/index.json' do
   
